@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adarsh Singh - B.Tech CSE Student, Full Stack Developer, and Data Analyst portfolio. Building Scalable SaaS Products & Turning Data Into Insights.">
+  <title>Adarsh Singh | Premium Portfolio</title>
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons: FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Premium Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">AS</div>
+      <div class="loader-text">Initializing Experience</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <a href="#" class="logo">Adarsh<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="#contact" class="btn-hire">Hire Me <i class="fas fa-paper-plane"></i></a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- Floating Tech Icons around hero -->
+    <div class="floating-icons">
+      <div class="float-icon icon-react" title="React"><i class="fab fa-react"></i></div>
+      <div class="float-icon icon-node" title="Node.js"><i class="fab fa-node-js"></i></div>
+      <div class="float-icon icon-postgres" title="PostgreSQL"><i class="fas fa-database"></i></div>
+      <div class="float-icon icon-powerbi" title="Power BI"><i class="fas fa-chart-bar"></i></div>
+      <div class="float-icon icon-python" title="Python"><i class="fab fa-python"></i></div>
+      <div class="float-icon icon-tensorflow" title="TensorFlow"><i class="fas fa-brain"></i></div>
+      <div class="float-icon icon-typescript" title="TypeScript"><i class="code-text">TS</i></div>
+      <div class="float-icon icon-supabase" title="Supabase"><i class="fas fa-bolt"></i></div>
+    </div>
+
+    <div class="hero-content" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="badge-welcome"><span>Welcome to my digital space</span></div>
+      <h1>Hi, I'm <span class="highlight">Adarsh Singh</span></h1>
+      <h2 class="hero-subtitle">
+        I am a <span id="typing"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-tagline">"Building Scalable SaaS Products & Turning Data Into Insights"</p>
+      
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+        <a href="assets/Adarsh_Resume.pdf" download="Adarsh_Singh_Resume.pdf" class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/AdarshSingh4455" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/adarsh-singh4455" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:adarsh004455@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Marquee Section -->
+  <div class="tech-marquee-container">
+    <div class="marquee-wrapper">
+      <div class="marquee-content">
+        <!-- Badges list -->
+        <span class="marquee-item"><i class="fab fa-react react-color"></i> React.js</span>
+        <span class="marquee-item"><i class="fab fa-node-js node-color"></i> Node.js</span>
+        <span class="marquee-item"><i class="fas fa-server express-color"></i> Express.js</span>
+        <span class="marquee-item"><i class="code-text ts-color">TS</i> TypeScript</span>
+        <span class="marquee-item"><i class="fab fa-js-square js-color"></i> JavaScript</span>
+        <span class="marquee-item"><i class="fas fa-database postgres-color"></i> PostgreSQL</span>
+        <span class="marquee-item"><i class="fas fa-database mysql-color"></i> MySQL</span>
+        <span class="marquee-item"><i class="fas fa-bolt supabase-color"></i> Supabase</span>
+        <span class="marquee-item"><i class="fas fa-chart-bar pb-color"></i> Power BI</span>
+        <span class="marquee-item"><i class="fas fa-chart-pie tableau-color"></i> Tableau</span>
+        <span class="marquee-item"><i class="fab fa-python python-color"></i> Python</span>
+        <span class="marquee-item"><i class="fas fa-brain tf-color"></i> TensorFlow</span>
+        <span class="marquee-item"><i class="fas fa-eye opencv-color"></i> OpenCV</span>
+        <span class="marquee-item"><i class="fab fa-git-alt git-color"></i> Git</span>
+        <span class="marquee-item"><i class="fab fa-github"></i> GitHub</span>
+        <span class="marquee-item"><i class="fas fa-robot"></i> Machine Learning</span>
+        <span class="marquee-item"><i class="fas fa-network-wired"></i> REST APIs</span>
+        <span class="marquee-item"><i class="fas fa-chart-line"></i> Data Analytics</span>
+        <span class="marquee-item"><i class="fas fa-laptop-code"></i> SaaS Development</span>
+      </div>
+      <!-- Duplicate content for infinite loop -->
+      <div class="marquee-content" aria-hidden="true">
+        <span class="marquee-item"><i class="fab fa-react react-color"></i> React.js</span>
+        <span class="marquee-item"><i class="fab fa-node-js node-color"></i> Node.js</span>
+        <span class="marquee-item"><i class="fas fa-server express-color"></i> Express.js</span>
+        <span class="marquee-item"><i class="code-text ts-color">TS</i> TypeScript</span>
+        <span class="marquee-item"><i class="fab fa-js-square js-color"></i> JavaScript</span>
+        <span class="marquee-item"><i class="fas fa-database postgres-color"></i> PostgreSQL</span>
+        <span class="marquee-item"><i class="fas fa-database mysql-color"></i> MySQL</span>
+        <span class="marquee-item"><i class="fas fa-bolt supabase-color"></i> Supabase</span>
+        <span class="marquee-item"><i class="fas fa-chart-bar pb-color"></i> Power BI</span>
+        <span class="marquee-item"><i class="fas fa-chart-pie tableau-color"></i> Tableau</span>
+        <span class="marquee-item"><i class="fab fa-python python-color"></i> Python</span>
+        <span class="marquee-item"><i class="fas fa-brain tf-color"></i> TensorFlow</span>
+        <span class="marquee-item"><i class="fas fa-eye opencv-color"></i> OpenCV</span>
+        <span class="marquee-item"><i class="fab fa-git-alt git-color"></i> Git</span>
+        <span class="marquee-item"><i class="fab fa-github"></i> GitHub</span>
+        <span class="marquee-item"><i class="fas fa-robot"></i> Machine Learning</span>
+        <span class="marquee-item"><i class="fas fa-network-wired"></i> REST APIs</span>
+        <span class="marquee-item"><i class="fas fa-chart-line"></i> Data Analytics</span>
+        <span class="marquee-item"><i class="fas fa-laptop-code"></i> SaaS Development</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Know Me Better</span>
+      <h2>About Me</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="about-container">
+      <div class="about-text-content" data-aos="fade-right">
+        <div class="glass-card about-main-card">
+          <p>I am a <strong>B.Tech Computer Science student</strong> passionate about building scalable web applications and extracting meaningful insights from data.</p>
+          <p>My expertise spans <strong>Full Stack Development</strong>, <strong>Data Analytics</strong>, <strong>Machine Learning</strong> and <strong>SaaS Product Development</strong>.</p>
+          <p>I have built ERP systems, gaming platforms, social applications and analytical dashboards using modern technologies such as <em>React, Node.js, PostgreSQL, Power BI and Python</em>.</p>
+          <p>I enjoy solving real-world problems through technology and continuously exploring emerging tools in AI and software engineering.</p>
+        </div>
+
+        <!-- Currently Learning Sub-section -->
+        <h3 class="subsection-title">Currently Learning</h3>
+        <div class="currently-learning-grid">
+          <div class="learning-badge card-hover-glow">
+            <i class="fab fa-react react-color"></i>
+            <span>Next.js</span>
+          </div>
+          <div class="learning-badge card-hover-glow">
+            <i class="cloud-icon fas fa-cloud"></i>
+            <span>Salesforce</span>
+          </div>
+          <div class="learning-badge card-hover-glow">
+            <i class="fas fa-chart-line pb-color"></i>
+            <span>Advanced Data Analytics</span>
+          </div>
+          <div class="learning-badge card-hover-glow">
+            <i class="fas fa-project-diagram"></i>
+            <span>System Design</span>
+          </div>
+          <div class="learning-badge card-hover-glow">
+            <i class="fas fa-cloud-upload-alt text-violet"></i>
+            <span>Cloud Technologies</span>
+          </div>
+          <div class="learning-badge card-hover-glow">
+            <i class="fas fa-magic spark-color"></i>
+            <span>Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual-content" data-aos="fade-left">
+        <!-- Interactive profile box with rotating gradient outline -->
+        <div class="profile-card-wrapper">
+          <div class="profile-card-glow"></div>
+          <div class="profile-image-card">
+            <img src="assets/profile.png" alt="Adarsh Singh" class="profile-photo">
+            <div class="profile-info-overlay">
+              <h4>Adarsh Singh</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Lucknow, Uttar Pradesh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Bring Section (New Recruiter-Focused) -->
+  <section id="what-i-bring" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Why Hire Me</span>
+      <h2>What I Bring</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="bring-grid">
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="50">
+        <div class="bring-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Full Stack Development</h3>
+        <p>Capable of building end-to-end web applications with robust backends and premium responsive UIs.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="bring-icon"><i class="fas fa-chart-pie"></i></div>
+        <h3>Data Analytics</h3>
+        <p>Expertise in transforming messy raw business data into actionable dashboard insights and storytellings.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="150">
+        <div class="bring-icon"><i class="fas fa-cubes"></i></div>
+        <h3>SaaS Product Development</h3>
+        <p>Architecting multi-tenant tools, integrated systems, and product layouts tailored to solve industry pains.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
+        <div class="bring-icon"><i class="fas fa-brain"></i></div>
+        <h3>Machine Learning</h3>
+        <p>Applying neural networks and classical AI algorithms to solve computer vision and predictive models.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="250">
+        <div class="bring-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>REST API Development</h3>
+        <p>Designing secure, standardized endpoints and webhooks, using JWT authentications and role permissions.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="300">
+        <div class="bring-icon"><i class="fas fa-database"></i></div>
+        <h3>Database Design</h3>
+        <p>Structuring clean relational database schemas, query optimizations, and handling Row Level Security.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="355">
+        <div class="bring-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Problem Solving</h3>
+        <p>Adapting logic and research skills to fix application bottlenecks, scalability limits, and logic anomalies.</p>
+      </div>
+      <div class="bring-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="400">
+        <div class="bring-icon"><i class="fas fa-layer-group"></i></div>
+        <h3>Scalable Architecture</h3>
+        <p>Designing robust software architectures to handle user concurrency, secure data, and optimize page load.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Counter Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-card glass-card card-hover-glow" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
+        <div class="stat-number" data-target="10">0</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-card glass-card card-hover-glow" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-icon"><i class="fas fa-award"></i></div>
+        <div class="stat-number" data-target="5">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-card glass-card card-hover-glow" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="stat-number" data-target="2">0</div>
+        <div class="stat-label">Internships Done</div>
+      </div>
+      <div class="stat-card glass-card card-hover-glow" data-aos="zoom-in" data-aos-delay="400">
+        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="stat-number" data-target="8.4" data-decimals="1">0</div>
+        <div class="stat-label">B.Tech CGPA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Technical Expertise</span>
+      <h2>Skills Grid</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Full Stack -->
+      <div class="skills-card glass-card" data-aos="fade-up">
+        <h3><i class="fas fa-laptop-code header-blue"></i> Full Stack Development</h3>
+        <div class="badges-wrapper">
+          <span class="skill-badge"><i class="fab fa-react react-color"></i> React.js</span>
+          <span class="skill-badge"><i class="fab fa-js js-color"></i> JavaScript</span>
+          <span class="skill-badge"><i class="code-text ts-color">TS</i> TypeScript</span>
+          <span class="skill-badge"><i class="fab fa-node-js node-color"></i> Node.js</span>
+          <span class="skill-badge"><i class="fas fa-server express-color"></i> Express.js</span>
+          <span class="skill-badge"><i class="fas fa-network-wired"></i> REST APIs</span>
+          <span class="skill-badge"><i class="fas fa-bolt text-violet"></i> Vite</span>
+          <span class="skill-badge"><i class="fab fa-html5 text-orange"></i> HTML5</span>
+          <span class="skill-badge"><i class="fab fa-css3-alt text-blue"></i> CSS3</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skills-card glass-card" data-aos="fade-up" data-aos-delay="100">
+        <h3><i class="fas fa-database header-purple"></i> Databases</h3>
+        <div class="badges-wrapper">
+          <span class="skill-badge"><i class="fas fa-database postgres-color"></i> PostgreSQL</span>
+          <span class="skill-badge"><i class="fas fa-database mysql-color"></i> MySQL</span>
+          <span class="skill-badge"><i class="fas fa-leaf text-green"></i> MongoDB</span>
+          <span class="skill-badge"><i class="fas fa-bolt supabase-color"></i> Supabase</span>
+        </div>
+      </div>
+
+      <!-- Data Analytics -->
+      <div class="skills-card glass-card" data-aos="fade-up" data-aos-delay="150">
+        <h3><i class="fas fa-chart-pie header-blue"></i> Data Analytics</h3>
+        <div class="badges-wrapper">
+          <span class="skill-badge"><i class="fas fa-chart-bar pb-color"></i> Power BI</span>
+          <span class="skill-badge"><i class="fas fa-chart-pie tableau-color"></i> Tableau</span>
+          <span class="skill-badge"><i class="far fa-file-excel text-green"></i> Excel</span>
+          <span class="skill-badge"><i class="fab fa-python python-color"></i> Python</span>
+          <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+          <span class="skill-badge"><i class="fas fa-table pandas-color"></i> Pandas</span>
+          <span class="skill-badge"><i class="fas fa-calculator text-blue"></i> NumPy</span>
+        </div>
+      </div>
+
+      <!-- AI & ML -->
+      <div class="skills-card glass-card" data-aos="fade-up" data-aos-delay="200">
+        <h3><i class="fas fa-brain header-purple"></i> AI & Machine Learning</h3>
+        <div class="badges-wrapper">
+          <span class="skill-badge"><i class="fas fa-brain tf-color"></i> TensorFlow</span>
+          <span class="skill-badge"><i class="fas fa-brain text-red"></i> Keras</span>
+          <span class="skill-badge"><i class="fas fa-cogs text-orange"></i> Scikit-Learn</span>
+          <span class="skill-badge"><i class="fas fa-eye opencv-color"></i> OpenCV</span>
+          <span class="skill-badge"><i class="fas fa-filter"></i> EDA</span>
+          <span class="skill-badge"><i class="fas fa-chart-line"></i> Predictive Analytics</span>
+          <span class="skill-badge"><i class="fas fa-robot"></i> Machine Learning</span>
+          <span class="skill-badge"><i class="fas fa-microchip"></i> Deep Learning</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills-card glass-card" data-aos="fade-up" data-aos-delay="250">
+        <h3><i class="fas fa-tools text-slate"></i> Tools</h3>
+        <div class="badges-wrapper">
+          <span class="skill-badge"><i class="fab fa-git-alt git-color"></i> Git</span>
+          <span class="skill-badge"><i class="fab fa-github"></i> GitHub</span>
+          <span class="skill-badge"><i class="code-text text-blue">VS</i> VS Code</span>
+          <span class="skill-badge"><i class="fas fa-paper-plane text-orange"></i> Postman</span>
+          <span class="skill-badge"><i class="fas fa-book-open python-color"></i> Jupyter</span>
+          <span class="skill-badge"><i class="fas fa-cloud text-orange"></i> Google Colab</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Career Milestones</span>
+      <h2>Experience</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="experience-timeline">
+      <div class="timeline-line"></div>
+
+      <!-- Internship 1 -->
+      <div class="timeline-container left" data-aos="fade-right">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card glass-card card-hover-glow">
+          <span class="timeline-date">Jul 2025 – Sep 2025</span>
+          <h3>AI-ML Virtual Intern</h3>
+          <h4 class="company">EduSkills | AICTE</h4>
+          <ul class="timeline-responsibilities">
+            <li>Applied Machine Learning and Deep Learning concepts to diverse datasets.</li>
+            <li>Worked hands-on with Python, TensorFlow, and OpenCV.</li>
+            <li>Performed data preprocessing, feature engineering, and model evaluation metrics.</li>
+            <li>Developed customized predictive analytical solutions for business cases.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Internship 2 -->
+      <div class="timeline-container right" data-aos="fade-left">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card glass-card card-hover-glow">
+          <span class="timeline-date">July 2024</span>
+          <h3>Web Development Intern</h3>
+          <h4 class="company">Prodigy InfoTech</h4>
+          <ul class="timeline-responsibilities">
+            <li>Built responsive and beautiful web applications following UX principles.</li>
+            <li>Worked extensively with API consumption, JSON, and dynamic state bindings.</li>
+            <li>Improved frontend debugging, troubleshooting, and asset optimizations.</li>
+            <li>Developed and polished clean interactive user interfaces.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project Section (New) -->
+  <section id="featured-project" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Highlight Work</span>
+      <h2>Featured Project</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="featured-card-wrapper" data-aos="fade-up" data-aos-duration="800">
+      <div class="featured-card glass-card">
+        <div class="featured-img-container">
+          <img src="assets/erp.png" alt="ERP SaaS Platform" class="featured-img">
+          <div class="featured-badge">⭐ Flagship SaaS Project</div>
+        </div>
+
+        <div class="featured-details">
+          <div class="featured-header-info">
+            <span class="project-tag">Full Stack Development</span>
+            <h3>ERP SaaS Platform</h3>
+          </div>
+          
+          <p class="featured-desc">
+            A comprehensive, multi-module cloud-based ERP software offering role-based access controls and operational tracking modules. Designed for high efficiency, scalability, and seamless institution management.
+          </p>
+
+          <div class="maintenance-notice-text" style="color: #F59E0B; font-size: 0.88rem; font-weight: 500; margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
+            <i class="fas fa-exclamation-triangle"></i> Currently being upgraded with new modules and performance improvements.
+          </div>
+
+          <div class="featured-bullets-grid">
+            <div class="bullet-item"><i class="fas fa-check-circle"></i> Student & Parent Portals</div>
+            <div class="bullet-item"><i class="fas fa-check-circle"></i> Attendance Tracking Module</div>
+            <div class="bullet-item"><i class="fas fa-check-circle"></i> Library Logs & Book Allocator</div>
+            <div class="bullet-item"><i class="fas fa-check-circle"></i> Role-Based Access Control</div>
+            <div class="bullet-item"><i class="fas fa-check-circle"></i> Exam Scheduler & Result Card</div>
+            <div class="bullet-item"><i class="fas fa-check-circle"></i> Notice Management System</div>
+          </div>
+
+          <div class="featured-tech-tags">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Supabase</span>
+            <span>JWT</span>
+            <span>REST APIs</span>
+          </div>
+
+          <div class="featured-actions">
+            <span class="badge-status private"><i class="fas fa-lock"></i> Private Repository</span>
+            <span class="badge-status maintenance"><i class="fas fa-tools"></i> Under Maintenance</span>
+            <a href="erp.html" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid Section -->
+  <section id="projects" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">My Creations</span>
+      <h2>Projects Portfolio</h2>
+      <div class="underline"></div>
+    </div>
+
+    <!-- Project Filters -->
+    <div class="project-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      <button class="filter-btn" data-filter="data">Data Analytics</button>
+      <button class="filter-btn" data-filter="aiml">AI / ML</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card glass-card card-hover-glow filter-item fullstack saas" data-aos="fade-up">
+        <div class="project-img-box">
+          <img src="assets/erp.png" alt="ERP SaaS Platform">
+          <div class="proj-badge">Full Stack • SaaS</div>
+        </div>
+        <div class="project-info">
+          <h3>ERP SaaS Platform</h3>
+          <p class="proj-desc">A multi-module enterprise platform managing schedules, examinations, student profiles, and administrative staff controls with secure authentication.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> Attendance Module</span>
+            <span><i class="fas fa-check"></i> Library & Notices</span>
+            <span><i class="fas fa-check"></i> Role Permissions</span>
+          </div>
+          <div class="proj-tech">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>Supabase</span>
+            <span>JWT</span>
+          </div>
+          <div class="project-private-info">
+            <span class="badge-status private"><i class="fas fa-lock"></i> Private Repository</span>
+            <span class="badge-status maintenance"><i class="fas fa-tools"></i> Under Maintenance</span>
+          </div>
+          <div class="project-links">
+            <a href="erp.html" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card glass-card card-hover-glow filter-item fullstack saas" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img-box">
+          <img src="assets/gamehub.png" alt="GameHub SaaS Platform">
+          <div class="proj-badge">Full Stack • SaaS</div>
+        </div>
+        <div class="project-info">
+          <h3>GameHub SaaS Platform</h3>
+          <p class="proj-desc">Multi-game web browser platform featuring user game lobbies, responsive visual dashboard, XP rewards, and live badges tracking achievements.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> XP Tracking</span>
+            <span><i class="fas fa-check"></i> Achievement System</span>
+            <span><i class="fas fa-check"></i> Responsive Dashboard</span>
+          </div>
+          <div class="proj-tech">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="project-private-info">
+            <span class="badge-status private"><i class="fas fa-lock"></i> Private Repository</span>
+            <span class="badge-status maintenance"><i class="fas fa-tools"></i> Under Maintenance</span>
+          </div>
+          <div class="project-links">
+            <a href="gamehub.html" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center;"><i class="fas fa-info-circle"></i> View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card glass-card card-hover-glow filter-item fullstack" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img-box">
+          <img src="assets/gotogether.png" alt="GoTogether Ride Sharing">
+          <div class="proj-badge">Full Stack</div>
+        </div>
+        <div class="project-info">
+          <h3>GoTogether Ride Sharing</h3>
+          <p class="proj-desc">Social Ride Sharing application built with map APIs, story feeds, push alerts, messaging features, and secure transactional payment channels.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> Interactive Map API</span>
+            <span><i class="fas fa-check"></i> Feeds & Stories</span>
+            <span><i class="fas fa-check"></i> Push Notifications</span>
+          </div>
+          <div class="proj-tech">
+            <span>React Native</span>
+            <span>Supabase</span>
+            <span>PostgreSQL</span>
+            <span>Razorpay</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AdarshSingh4455/GoTogether" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/AdarshSingh4455/GoTogether" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card glass-card card-hover-glow filter-item data" data-aos="fade-up">
+        <div class="project-img-box">
+          <img src="assets/ipl.png" alt="IPL Performance Dashboard">
+          <div class="proj-badge">Data Analytics</div>
+        </div>
+        <div class="project-info">
+          <h3>IPL Performance Dashboard</h3>
+          <p class="proj-desc">Dynamic sports business intelligence tool tracking season metrics, critical player performance KPIs, and multi-team comparative breakdowns.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> Interactive KPIs</span>
+            <span><i class="fas fa-check"></i> Player Run/Wicket Stats</span>
+            <span><i class="fas fa-check"></i> Data-driven Storytelling</span>
+          </div>
+          <div class="proj-tech">
+            <span>Power BI</span>
+            <span>MS Excel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AdarshSingh4455" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card glass-card card-hover-glow filter-item data" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img-box">
+          <img src="assets/sales.png" alt="Retail Sales Analysis">
+          <div class="proj-badge">Data Analytics</div>
+        </div>
+        <div class="project-info">
+          <h3>Retail Sales Forecasting</h3>
+          <p class="proj-desc">Predictive model system resolving retail seasonal trends, forecasting sales heights, and delivering analytics reports for retail operations.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> Seasonality Forecasts</span>
+            <span><i class="fas fa-check"></i> Historical Trend Analysis</span>
+            <span><i class="fas fa-check"></i> Automated Dashboards</span>
+          </div>
+          <div class="proj-tech">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Scikit-Learn</span>
+            <span>Seaborn</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AdarshSingh4455" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card glass-card card-hover-glow filter-item aiml" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img-box">
+          <img src="assets/emotion.png" alt="Real-Time Emotion Detection">
+          <div class="proj-badge">AI / ML</div>
+        </div>
+        <div class="project-info">
+          <h3>Real-Time Emotion Detection</h3>
+          <p class="proj-desc">Computer vision model trained on CNN, performing real-time classification of emotions from webcam streams with bounding frames.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> Real-time Feed Support</span>
+            <span><i class="fas fa-check"></i> CNN Classification model</span>
+            <span><i class="fas fa-check"></i> Dynamic overlay tags</span>
+          </div>
+          <div class="proj-tech">
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>OpenCV</span>
+            <span>CNN</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AdarshSingh4455/Emotion_detection" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/AdarshSingh4455/Emotion_detection" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Model Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card glass-card card-hover-glow filter-item aiml" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-img-box">
+          <img src="assets/virtual_mouse.png" alt="Hand Gesture Virtual Mouse Control">
+          <div class="proj-badge">AI / ML</div>
+        </div>
+        <div class="project-info">
+          <h3>Virtual Mouse Control</h3>
+          <p class="proj-desc">Built a virtual mouse control system using hand gesture recognition. Implemented real-time hand tracking and gesture detection via computer vision.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check"></i> Hand Tracking & Gesture Detection</span>
+            <span><i class="fas fa-check"></i> Cursor Control & Click Action</span>
+            <span><i class="fas fa-check"></i> Computer Vision Integration</span>
+          </div>
+          <div class="proj-tech">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>MediaPipe</span>
+            <span>Machine Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AdarshSingh4455/Hand-Gesture-Virtual-Mouse-Web-Application" target="_blank" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/AdarshSingh4455/Hand-Gesture-Virtual-Mouse-Web-Application" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Statistics Dashboard (New) -->
+  <section id="github-stats" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Open Source Metrics</span>
+      <h2>GitHub Dashboard</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="github-dashboard-container" data-aos="fade-up">
+      <!-- Profile Header Summary -->
+      <div class="github-header-card glass-card">
+        <div class="gh-profile-info">
+          <div class="gh-avatar-glow">
+            <img src="assets/profile.png" alt="Adarsh Singh" class="gh-avatar" id="gh-avatar">
+          </div>
+          <div class="gh-user-details">
+            <h3>Adarsh Singh</h3>
+            <p id="gh-username">@AdarshSingh4455</p>
+            <div class="gh-badges">
+              <span class="gh-badge"><i class="fas fa-code-branch"></i> Git Practitioner</span>
+              <span class="gh-badge"><i class="fas fa-laptop-code"></i> SaaS Builder</span>
+            </div>
+          </div>
+        </div>
+        <div class="gh-cta-box">
+          <a href="https://github.com/AdarshSingh4455" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Visit Profile</a>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="github-stats-grid">
+        <!-- Repos -->
+        <div class="gh-stat-card glass-card card-hover-glow">
+          <div class="gh-icon blue-glow"><i class="fas fa-history"></i></div>
+          <div class="gh-text">
+            <h4 id="gh-repos">18</h4>
+            <p>Repositories Built</p>
+          </div>
+        </div>
+        <!-- Open PRs -->
+        <div class="gh-stat-card glass-card card-hover-glow">
+          <div class="gh-icon purple-glow"><i class="fas fa-code-merge"></i></div>
+          <div class="gh-text">
+            <h4 id="gh-gists">10+</h4>
+            <p>Gists & Scripts</p>
+          </div>
+        </div>
+        <!-- Followers -->
+        <div class="gh-stat-card glass-card card-hover-glow">
+          <div class="gh-icon blue-glow"><i class="fas fa-users"></i></div>
+          <div class="gh-text">
+            <h4 id="gh-followers">25+</h4>
+            <p>Followers</p>
+          </div>
+        </div>
+        <!-- Total Contributions -->
+        <div class="gh-stat-card glass-card card-hover-glow">
+          <div class="gh-icon purple-glow"><i class="fas fa-chart-line"></i></div>
+          <div class="gh-text">
+            <h4 id="gh-contributions">500+</h4>
+            <p>Contributions This Year</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages & Activity Chart Mockup -->
+      <div class="github-visuals-grid">
+        <div class="gh-chart-card glass-card">
+          <h4>Top Languages Used</h4>
+          <div class="gh-lang-list">
+            <div class="gh-lang-item">
+              <div class="lang-label"><span>JavaScript / React</span><span>42%</span></div>
+              <div class="lang-bar"><span class="bar-js" style="width: 42%"></span></div>
+            </div>
+            <div class="gh-lang-item">
+              <div class="lang-label"><span>Python / ML</span><span>28%</span></div>
+              <div class="lang-bar"><span class="bar-py" style="width: 28%"></span></div>
+            </div>
+            <div class="gh-lang-item">
+              <div class="lang-label"><span>PostgreSQL / SQL</span><span>18%</span></div>
+              <div class="lang-bar"><span class="bar-sql" style="width: 18%"></span></div>
+            </div>
+            <div class="gh-lang-item">
+              <div class="lang-label"><span>TypeScript</span><span>12%</span></div>
+              <div class="lang-bar"><span class="bar-ts" style="width: 12%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gh-chart-card glass-card">
+          <h4>Developer Productivity Metrics</h4>
+          <div class="productivity-metrics-list">
+            <div class="metric-item">
+              <span class="metric-label">Clean Code Commitment</span>
+              <span class="metric-value text-blue">98%</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Version Control Activity</span>
+              <span class="metric-value text-violet">High</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">API Testing (Postman logs)</span>
+              <span class="metric-value text-blue">200+ Requests</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Deployment Success Rate</span>
+              <span class="metric-value text-violet">100%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Academic Credentials</span>
+      <h2>Certifications</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="certifications-grid">
+      <!-- Cert 1 -->
+      <div class="cert-card glass-card card-hover-glow" data-aos="fade-up">
+        <div class="cert-icon"><i class="fas fa-chart-pie pb-color"></i></div>
+        <div class="cert-details">
+          <h3>Data Analytics using Tableau</h3>
+          <p class="issuer">Crio.Do</p>
+          <span class="badge-cert">Credential Verified</span>
+        </div>
+      </div>
+      <!-- Cert 2 -->
+      <div class="cert-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="50">
+        <div class="cert-icon"><i class="fas fa-graduation-cap text-orange"></i></div>
+        <div class="cert-details">
+          <h3>Data Science Boot Camp</h3>
+          <p class="issuer">GeeksforGeeks</p>
+          <span class="badge-cert">Credential Verified</span>
+        </div>
+      </div>
+      <!-- Cert 3 -->
+      <div class="cert-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="cert-icon"><i class="fas fa-database postgres-color"></i></div>
+        <div class="cert-details">
+          <h3>SQL & Relational Databases</h3>
+          <p class="issuer">IBM</p>
+          <span class="badge-cert">Credential Verified</span>
+        </div>
+      </div>
+      <!-- Cert 4 -->
+      <div class="cert-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="150">
+        <div class="cert-icon"><i class="fas fa-chart-bar pb-color"></i></div>
+        <div class="cert-details">
+          <h3>Power BI Analytics</h3>
+          <p class="issuer">Ducat</p>
+          <span class="badge-cert">Credential Verified</span>
+        </div>
+      </div>
+      <!-- Cert 5 -->
+      <div class="cert-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
+        <div class="cert-icon"><i class="fas fa-brain tf-color"></i></div>
+        <div class="cert-details">
+          <h3>AI-ML Virtual Internship</h3>
+          <p class="issuer">EduSkills & AICTE</p>
+          <span class="badge-cert">Credential Verified</span>
+        </div>
+      </div>
+      <!-- Cert 6 -->
+      <div class="cert-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="250">
+        <div class="cert-icon"><i class="fas fa-laptop-code react-color"></i></div>
+        <div class="cert-details">
+          <h3>Web Development Internship</h3>
+          <p class="issuer">Prodigy InfoTech</p>
+          <span class="badge-cert">Credential Verified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section (New) -->
+  <section id="achievements" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Key Accomplishments</span>
+      <h2>Achievements</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="achievements-grid">
+      <!-- Achievement 1 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up">
+        <div class="ach-icon"><i class="fas fa-laptop-code text-blue"></i></div>
+        <h3>10+ Projects Built</h3>
+        <p>Designed and launched operational systems ranging from full-stack platforms to computer vision codebases.</p>
+      </div>
+      <!-- Achievement 2 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="50">
+        <div class="ach-icon"><i class="fas fa-award text-violet"></i></div>
+        <h3>5+ Certifications</h3>
+        <p>Obtained credentials from leading firms including IBM, GeeksforGeeks, Ducat, and Crio.Do.</p>
+      </div>
+      <!-- Achievement 3 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="ach-icon"><i class="fas fa-briefcase text-blue"></i></div>
+        <h3>2 Professional Internships</h3>
+        <p>Acquired industry training through web development and AI-ML roles at Prodigy InfoTech and EduSkills.</p>
+      </div>
+      <!-- Achievement 4 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="150">
+        <div class="ach-icon"><i class="fas fa-graduation-cap text-violet"></i></div>
+        <h3>8.4 CGPA</h3>
+        <p>Maintained high academic standing in the B.Tech Computer Science Engineering undergraduate course.</p>
+      </div>
+      <!-- Achievement 5 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="200">
+        <div class="ach-icon"><i class="fas fa-cubes text-blue"></i></div>
+        <h3>ERP SaaS Platform Developed</h3>
+        <p>Engineered a multi-module cloud ERP with role-based access rules and operations logging.</p>
+      </div>
+      <!-- Achievement 6 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="250">
+        <div class="ach-icon"><i class="fas fa-gamepad text-violet"></i></div>
+        <h3>GameHub SaaS Platform Developed</h3>
+        <p>Built a multiplayer browser gaming hub featuring XP tracking and custom logins.</p>
+      </div>
+      <!-- Achievement 7 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="300">
+        <div class="ach-icon"><i class="fas fa-brain text-blue"></i></div>
+        <h3>AI/ML Projects Implemented</h3>
+        <p>Developed real-time hand gesture virtual mice and CNN-based emotion detectors.</p>
+      </div>
+      <!-- Achievement 8 -->
+      <div class="achievement-card glass-card card-hover-glow" data-aos="fade-up" data-aos-delay="350">
+        <div class="ach-icon"><i class="fas fa-chart-line text-violet"></i></div>
+        <h3>Data Analytics Dashboards Created</h3>
+        <p>Designed interactive dashboards with Power BI, Tableau, and sales forecasts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education / Journey Timeline (New) -->
+  <section id="journey" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Academic & Technical Path</span>
+      <h2>Journey Timeline</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="journey-timeline-container" data-aos="fade-up">
+      <div class="journey-track"></div>
+      
+      <!-- Milestone 1 -->
+      <div class="journey-node">
+        <div class="node-year">2023</div>
+        <div class="node-marker"></div>
+        <div class="node-details glass-card">
+          <h4>Started B.Tech CSE</h4>
+          <p>Entered undergraduate program in Computer Science Engineering. Learned core algorithms, OOPs concepts, and database foundations.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 2 -->
+      <div class="journey-node">
+        <div class="node-year">2024</div>
+        <div class="node-marker"></div>
+        <div class="node-details glass-card">
+          <h4>Web Dev Internship</h4>
+          <p>Undertook internship at Prodigy InfoTech. Mastered JavaScript DOM APIs, responsive stylesheets, and frontend system architecture.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 3 -->
+      <div class="journey-node">
+        <div class="node-year">2025</div>
+        <div class="node-marker"></div>
+        <div class="node-details glass-card">
+          <h4>AI-ML Internship</h4>
+          <p>Worked under AICTE & EduSkills on machine learning. Built datasets pipelines, CNN classifiers, and predictive scripts.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 4 -->
+      <div class="journey-node">
+        <div class="node-year">2025</div>
+        <div class="node-marker"></div>
+        <div class="node-details glass-card">
+          <h4>Data Analytics Projects</h4>
+          <p>Focussed on BI tools and statistics. Built functional dashboards in Power BI/Tableau and sales forecasting programs in Python.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 5 -->
+      <div class="journey-node">
+        <div class="node-year">2026</div>
+        <div class="node-marker"></div>
+        <div class="node-details glass-card">
+          <h4>SaaS Development</h4>
+          <p>Architected full-featured SaaS systems including Student Hubs and GameHub, implementing JWT and schema designs.</p>
+        </div>
+      </div>
+
+      <!-- Milestone 6 -->
+      <div class="journey-node">
+        <div class="node-year">2026</div>
+        <div class="node-marker"></div>
+        <div class="node-details glass-card">
+          <h4>Advanced Full Stack</h4>
+          <p>Deploying Next.js applications, studying system design paradigms, and scaling SaaS platforms with optimized performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-header" data-aos="fade-up">
+      <span class="pre-title">Get In Touch</span>
+      <h2>Contact</h2>
+      <div class="underline"></div>
+    </div>
+
+    <!-- Contact Glassmorphism Card -->
+    <div class="contact-card-container glass-card" data-aos="fade-up">
+      <div class="contact-sidebar">
+        <h3>Let's Connect! 🚀</h3>
+        <p class="contact-subtext">Have an opportunity, a project query, or just want to chat tech? Shoot a message and I'll get back as fast as possible.</p>
+        
+        <div class="contact-info-list">
+          <div class="info-item">
+            <div class="info-icon"><i class="far fa-envelope"></i></div>
+            <div class="info-text">
+              <span>Email</span>
+              <a href="mailto:adarsh004455@gmail.com">adarsh004455@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="info-text">
+              <span>Phone</span>
+              <a href="tel:+916386332550">+91 63863 32550</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-text">
+              <span>Location</span>
+              <p>Lucknow, Uttar Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://github.com/AdarshSingh4455" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/adarsh-singh4455" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form-side">
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form">
+          <div class="input-row">
+            <div class="input-group">
+              <input type="text" id="user_name" name="user_name" required placeholder=" ">
+              <label for="user_name">Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="user_email" name="user_email" required placeholder=" ">
+              <label for="user_email">Email</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="text" id="subject" name="subject" required placeholder=" ">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" name="message" required placeholder=" " rows="5"></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="btn-submit">
+            <span class="btn-text">Send Message <i class="fas fa-paper-plane"></i></span>
+            <span class="btn-spinner hidden"><i class="fas fa-circle-notch fa-spin"></i> Sending...</span>
+          </button>
+
+          <!-- Status Messages -->
+          <div class="form-status hidden success" id="status-success">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I will reach out soon.
+          </div>
+          <div class="form-status hidden error" id="status-error">
+            <i class="fas fa-exclamation-triangle"></i> Failed to send the message. Please email me directly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#" class="logo">Adarsh<span>.</span></a>
+        <p>Full Stack Developer & Data Analyst</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/AdarshSingh4455" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/adarsh-singh4455" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:adarsh004455@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Adarsh Singh. All Rights Reserved.</p>
+      <p class="credits">Built with React • JavaScript • Passion ☕</p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="topBtn" aria-label="Back To Top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

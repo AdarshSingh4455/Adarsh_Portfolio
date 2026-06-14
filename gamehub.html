@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameHub SaaS Platform - Project Details. A browser gaming hub platform developed by Adarsh Singh.">
+  <title>GameHub SaaS Platform | Project Details</title>
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons: FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="scroll-scrolled">
+    <a href="index.html" class="logo">Adarsh<span>.</span></a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="index.html#contact" class="btn-hire">Hire Me <i class="fas fa-paper-plane"></i></a>
+    </div>
+  </header>
+
+  <!-- Project Details Hero Section -->
+  <section class="detail-hero">
+    <div class="detail-hero-content" data-aos="fade-up">
+      <div class="detail-badge-row">
+        <span class="badge-status private"><i class="fas fa-lock"></i> Private Repository</span>
+        <span class="badge-status maintenance"><i class="fas fa-tools"></i> Under Maintenance</span>
+        <span class="badge-status" style="color: var(--secondary-accent); border-color: rgba(139,92,246,0.25);">🎮 Gaming Portal</span>
+      </div>
+      <h1>GameHub SaaS Platform</h1>
+      <p class="hero-tagline" style="margin-bottom: 0;">Multi-game browser gaming platform with user profiles, XP progression tracking, and achievement unlocks.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Grid -->
+  <section class="detail-container">
+    <div class="main-details-side" data-aos="fade-right">
+      
+      <!-- Project Overview Card -->
+      <div class="detail-card glass-card">
+        <h2><i class="fas fa-align-left"></i> Project Overview</h2>
+        <p>
+          GameHub is a comprehensive web-based gaming platform that hosts interactive browser games, provides player accounts, and monitors performance statistics. It was designed to explore real-time data syncs, gamification systems, and smooth reactive UIs for web gamers.
+        </p>
+        <p>
+          The platform operates on a central authentication gate where players can register, sign in to track their scores, unlock virtual badges, and compare statistics on global leaderboards.
+        </p>
+      </div>
+
+      <!-- Core Features Card -->
+      <div class="detail-card glass-card">
+        <h2><i class="fas fa-list-ul"></i> Core Platform Features</h2>
+        <ul class="features-list">
+          <li><strong>Multiple Games Library:</strong> Integrated browser games including Hand Cricket (multiplayer number battle), Scribble, Dumb Charades, Tic-Tac-Toe, Word Wizard, and Rock Paper Scissors.</li>
+          <li><strong>XP Progression System:</strong> Earn Experience Points (XP) for playing, winning matches, and maintaining daily logins.</li>
+          <li><strong>Badges & Achievements:</strong> Unlocked badges displayed on user profiles indicating milestones reached.</li>
+          <li><strong>Responsive Gaming Dashboard:</strong> Unified sidebar control panel monitoring player stats, streaks, and unlocked nodes.</li>
+          <li><strong>Mobile Gameplay support:</strong> Clean navigation bars and layout adjustments for playing on handheld viewports.</li>
+          <li><strong>Database Integration:</strong> PostgreSQL tables tracking user profiles, credentials, scores, and active logs.</li>
+        </ul>
+      </div>
+
+      <!-- Screenshots Gallery Card -->
+      <div class="detail-card glass-card">
+        <h2><i class="far fa-images"></i> Screenshots Gallery</h2>
+        <p>Click on any screenshot to view the high-resolution interface and details.</p>
+        
+        <div class="gallery-grid">
+          <!-- GameHub Login Screen -->
+          <div class="gallery-item card-hover-glow">
+            <img src="assets/gamehub_login.png" alt="GameHub Login Screen">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <!-- GameHub Side Navigation -->
+          <div class="gallery-item card-hover-glow">
+            <img src="assets/gamehub_sidenav.png" alt="GameHub Navigation Drawer">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <!-- GameHub Mobile Layout -->
+          <div class="gallery-item card-hover-glow">
+            <img src="assets/gamehub_mobile.png" alt="GameHub Games Mobile View">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <!-- GameHub Desktop Dashboard -->
+          <div class="gallery-item card-hover-glow">
+            <img src="assets/gamehub_dashboard.png" alt="GameHub Dashboard Overview (XP Tracking)">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Sticky Info -->
+    <div class="sidebar-sticky" data-aos="fade-left">
+      <!-- Status Card -->
+      <div class="detail-card glass-card status-widget">
+        <div class="notice-box">
+          <div class="notice-title text-red"><i class="fas fa-lock"></i> Code repository is private</div>
+          <div class="notice-desc">This project's repository is private. To safeguard internal logic and gamification scripts, source code is restricted.</div>
+        </div>
+
+        <div class="notice-box">
+          <div class="notice-title text-yellow"><i class="fas fa-exclamation-triangle"></i> Maintenance Notice</div>
+          <div class="notice-desc">Platform currently under maintenance. The live version is temporarily unavailable while new features and real-time multiplayer integrations are being added.</div>
+        </div>
+
+        <div class="notice-box">
+          <div class="notice-title"><i class="fas fa-layer-group"></i> Tech Stack</div>
+          <div class="detail-tech-grid" style="margin-top: 10px;">
+            <span class="detail-tech-badge">React.js</span>
+            <span class="detail-tech-badge">TypeScript</span>
+            <span class="detail-tech-badge">PostgreSQL</span>
+            <span class="detail-tech-badge">Supabase API</span>
+            <span class="detail-tech-badge">CSS Grid</span>
+          </div>
+        </div>
+
+        <a href="index.html#contact" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;"><i class="far fa-envelope"></i> Request Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Lightbox Preview">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="index.html" class="logo">Adarsh<span>.</span></a>
+        <p>Full Stack Developer & Data Analyst</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/AdarshSingh4455" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/adarsh-singh4455" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:adarsh004455@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Adarsh Singh. All Rights Reserved.</p>
+      <p class="credits">Built with React • JavaScript • Passion ☕</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

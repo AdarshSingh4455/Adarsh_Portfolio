@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ERP SaaS Platform - Project Details. A private professional SaaS product developed by Adarsh Singh.">
+  <title>ERP SaaS Platform | Project Details</title>
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons: FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="scroll-scrolled">
+    <a href="index.html" class="logo">Adarsh<span>.</span></a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="index.html#contact" class="btn-hire">Hire Me <i class="fas fa-paper-plane"></i></a>
+    </div>
+  </header>
+
+  <!-- Project Details Hero Section -->
+  <section class="detail-hero">
+    <div class="detail-hero-content" data-aos="fade-up">
+      <div class="detail-badge-row">
+        <span class="badge-status private"><i class="fas fa-lock"></i> Private Repository</span>
+        <span class="badge-status maintenance"><i class="fas fa-tools"></i> Under Maintenance</span>
+        <span class="badge-status" style="color: var(--primary-accent); border-color: rgba(56,189,248,0.25);">⭐ Flagship SaaS Project</span>
+      </div>
+      <h1>ERP SaaS Platform</h1>
+      <p class="hero-tagline" style="margin-bottom: 0;">Multi-module administrative cloud solution built for institutions to track attendance, examinations, libraries, and users.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Grid -->
+  <section class="detail-container">
+    <div class="main-details-side" data-aos="fade-right">
+      
+      <!-- Project Overview Card -->
+      <div class="detail-card glass-card">
+        <h2><i class="fas fa-align-left"></i> Project Overview</h2>
+        <p>
+          The ERP SaaS Platform is an enterprise-grade cloud application designed to streamline institutional operations, digitize records management, and simplify user workflows. Architected as a multi-module system, it offers unique access dashboards for administrators, staff, students, and parents.
+        </p>
+        <p>
+          With absolute security in mind, the platform uses JSON Web Token (JWT) authentications and custom database schema rules to implement rigid Role-Based Access Controls (RBAC), ensuring users can only read, write, or modify records within their authorized scope.
+        </p>
+      </div>
+
+      <!-- Core Features Card -->
+      <div class="detail-card glass-card">
+        <h2><i class="fas fa-list-ul"></i> Core Modules & Features</h2>
+        <ul class="features-list">
+          <li><strong>Student & Parent Portals:</strong> Personalized profiles tracking progress, invoices, reports, and notice bulletins.</li>
+          <li><strong>Attendance Management:</strong> Direct teacher check-ins, automated warning emails, and statistical monthly tallies.</li>
+          <li><strong>Examination Module:</strong> Grade sheet generators, online test schedulers, marks registers, and performance analytics.</li>
+          <li><strong>Library Management:</strong> Dynamic log files tracking books checked out, return alarms, and fine accounting.</li>
+          <li><strong>Notice Board System:</strong> Global alerts feed, custom newsletters, and class-level announcements notifications.</li>
+          <li><strong>Role-Based Access Control (RBAC):</strong> Granular permissions managing editor, view-only, and super-admin rights.</li>
+          <li><strong>RESTful API Integration:</strong> High-performance server endpoints handling data transmission cleanly.</li>
+        </ul>
+      </div>
+
+      <!-- Architecture Section -->
+      <div class="detail-card glass-card">
+        <h2><i class="fas fa-sitemap"></i> Platform Architecture</h2>
+        <p>
+          Designed using a decoupled monolithic pattern, the platform connects a React-based frontend dashboard with a Node.js & Express REST API server. Supabase and PostgreSQL handle relational database tables, utilizing foreign key cascades and triggers for database calculations.
+        </p>
+        <p>
+          Storage services are integrated to support file uploads for study materials, profile avatars, and examination papers securely.
+        </p>
+      </div>
+
+      <!-- Future Screenshots Gallery Card -->
+      <div class="detail-card glass-card">
+        <h2><i class="far fa-images"></i> Screenshots Gallery</h2>
+        <p>Screenshots of the ERP platform are temporarily hidden due to proprietary client data and ongoing updates. Displayed below are UI layouts indicating dashboard visual flows.</p>
+        
+        <div class="gallery-grid">
+          <!-- Placeholder Grid -->
+          <div class="gallery-item card-hover-glow">
+            <img src="assets/erp.png" alt="ERP SaaS Dashboard Layout Mockup">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Sticky Info -->
+    <div class="sidebar-sticky" data-aos="fade-left">
+      <!-- Status Card -->
+      <div class="detail-card glass-card status-widget">
+        <div class="notice-box">
+          <div class="notice-title text-red"><i class="fas fa-lock"></i> Source Code Private</div>
+          <div class="notice-desc">This project was developed as a commercial SaaS solution. The repository and source code are private and not publicly available to respect proprietary licenses.</div>
+        </div>
+
+        <div class="notice-box">
+          <div class="notice-title text-yellow"><i class="fas fa-exclamation-triangle"></i> Maintenance Notice</div>
+          <div class="notice-desc">Currently being upgraded with new modules, PostgreSQL query optimizations, and performance improvements. Live preview is temporarily paused.</div>
+        </div>
+
+        <div class="notice-box">
+          <div class="notice-title"><i class="fas fa-layer-group"></i> Tech Stack</div>
+          <div class="detail-tech-grid" style="margin-top: 10px;">
+            <span class="detail-tech-badge">React.js</span>
+            <span class="detail-tech-badge">Node.js</span>
+            <span class="detail-tech-badge">PostgreSQL</span>
+            <span class="detail-tech-badge">Supabase</span>
+            <span class="detail-tech-badge">JWT</span>
+            <span class="detail-tech-badge">REST APIs</span>
+          </div>
+        </div>
+
+        <a href="index.html#contact" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;"><i class="far fa-envelope"></i> Contact for Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Lightbox Preview">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="index.html" class="logo">Adarsh<span>.</span></a>
+        <p>Full Stack Developer & Data Analyst</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/AdarshSingh4455" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/adarsh-singh4455" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:adarsh004455@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Adarsh Singh. All Rights Reserved.</p>
+      <p class="credits">Built with React • JavaScript • Passion ☕</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
