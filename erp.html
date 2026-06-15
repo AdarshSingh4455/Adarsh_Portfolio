@@ -118,12 +118,7 @@
       <div class="detail-card glass-card status-widget">
         <div class="notice-box">
           <div class="notice-title text-red"><i class="fas fa-lock"></i> Source Code Private</div>
-          <div class="notice-desc">This project was developed as a commercial SaaS solution. The repository and source code are private and not publicly available to respect proprietary licenses.</div>
-        </div>
-
-        <div class="notice-box">
-          <div class="notice-title text-yellow"><i class="fas fa-exclamation-triangle"></i> Maintenance Notice</div>
-          <div class="notice-desc">Currently being upgraded with new modules, PostgreSQL query optimizations, and performance improvements. Live preview is temporarily paused.</div>
+          <div class="notice-desc">This project was developed as a production-grade SaaS application. The source code is maintained in a private repository and is not publicly accessible. Live demonstrations are available through the portfolio.</div>
         </div>
 
         <div class="notice-box">
@@ -138,7 +133,10 @@
           </div>
         </div>
 
-        <a href="index.html#contact" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;"><i class="far fa-envelope"></i> Contact for Demo</a>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+          <a href="https://erp-lps-convent.vercel.app/" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-external-link-alt"></i> Launch Demo</a>
+          <button class="btn btn-outline erp-private-btn" style="width: 100%; justify-content: center;"><i class="fas fa-lock"></i> Repository Status</button>
+        </div>
       </div>
     </div>
   </section>
@@ -148,6 +146,29 @@
     <span class="lightbox-close">&times;</span>
     <img class="lightbox-content" id="lightbox-img" alt="Lightbox Preview">
     <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- Premium Glassmorphism Modal Overlay -->
+  <div id="premium-modal-overlay" class="premium-modal-overlay">
+    <div class="premium-modal">
+      <button id="premium-modal-close" class="premium-modal-close" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="premium-modal-header">
+        <div id="premium-modal-icon" class="premium-modal-icon">
+          <!-- Icon will be injected dynamically -->
+        </div>
+        <h3 id="premium-modal-title" class="premium-modal-title">
+          <!-- Title will be injected dynamically -->
+        </h3>
+      </div>
+      <div id="premium-modal-body" class="premium-modal-body">
+        <!-- Content will be injected dynamically -->
+      </div>
+      <div id="premium-modal-footer" class="premium-modal-footer">
+        <!-- Buttons will be injected dynamically -->
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->

@@ -418,4 +418,165 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ===== 13. GLOBAL COPY TO CLIPBOARD =====
+  window.copyToClipboard = (text, buttonElement) => {
+    navigator.clipboard.writeText(text).then(() => {
+      const icon = buttonElement.querySelector("i");
+      if (icon) {
+        const originalClass = icon.className;
+        icon.className = "fas fa-check";
+        icon.style.color = "#10B981"; // success green
+        setTimeout(() => {
+          icon.className = originalClass;
+          icon.style.color = "";
+        }, 1500);
+      }
+    }).catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+  };
+
+  // ===== 14. PREMIUM GLASSMORPHISM MODAL CONTROLLER =====
+  const modalOverlay = document.getElementById("premium-modal-overlay");
+  const modalCloseBtn = document.getElementById("premium-modal-close");
+  const modalIcon = document.getElementById("premium-modal-icon");
+  const modalTitle = document.getElementById("premium-modal-title");
+  const modalBody = document.getElementById("premium-modal-body");
+  const modalFooter = document.getElementById("premium-modal-footer");
+
+  function showPremiumModal(options) {
+    if (!modalOverlay) return;
+
+    // Reset classes
+    modalIcon.className = "premium-modal-icon";
+    if (options.iconColorClass) {
+      modalIcon.classList.add(options.iconColorClass);
+    }
+    
+    // Set icon & title
+    modalIcon.innerHTML = `<i class="${options.iconClass || 'fas fa-info-circle'}"></i>`;
+    modalTitle.textContent = options.title || "";
+    modalBody.innerHTML = options.bodyHtml || "";
+    
+    // Set buttons
+    modalFooter.innerHTML = "";
+    if (options.buttons && options.buttons.length > 0) {
+      options.buttons.forEach(btnOpt => {
+        const btn = document.createElement("button");
+        btn.className = `premium-modal-btn ${btnOpt.type === 'action' ? 'btn-action' : 'btn-close'}`;
+        btn.innerHTML = btnOpt.text;
+        btn.addEventListener("click", () => {
+          if (btnOpt.onClick) btnOpt.onClick();
+          hidePremiumModal();
+        });
+        modalFooter.appendChild(btn);
+      });
+    } else {
+      // Default close button if none provided
+      const defaultClose = document.createElement("button");
+      defaultClose.className = "premium-modal-btn btn-close";
+      defaultClose.textContent = "Close";
+      defaultClose.addEventListener("click", hidePremiumModal);
+      modalFooter.appendChild(defaultClose);
+    }
+
+    modalOverlay.classList.add("active");
+    document.body.style.overflow = "hidden"; // lock page scroll
+  }
+
+  function hidePremiumModal() {
+    if (!modalOverlay) return;
+    modalOverlay.classList.remove("active");
+    document.body.style.overflow = ""; // unlock page scroll
+  }
+
+  // Bind close events
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener("click", hidePremiumModal);
+  }
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", (e) => {
+      if (e.target === modalOverlay) {
+        hidePremiumModal();
+      }
+    });
+  }
+
+  // ESC key closing both lightbox and premium modal
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      hidePremiumModal();
+      const lightboxEl = document.getElementById("lightbox");
+      if (lightboxEl && lightboxEl.classList.contains("show")) {
+        lightboxEl.classList.remove("show");
+      }
+    }
+  });
+
+  // ===== 15. PROJECT INTERACTION EVENT BINDINGS =====
+  
+  // ERP Private Repo button
+  document.querySelectorAll(".erp-private-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      showPremiumModal({
+        title: "Private Repository",
+        iconClass: "fas fa-lock",
+        iconColorClass: "icon-red",
+        bodyHtml: `
+          <p>This project was developed as a production-grade SaaS application.</p>
+          <p>The source code is maintained in a private repository and is not publicly accessible.</p>
+          <p>Live demonstrations are available through the portfolio.</p>
+        `
+      });
+    });
+  });
+
+  // GameHub Private Repo button
+  document.querySelectorAll(".gamehub-private-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      showPremiumModal({
+        title: "Private Repository",
+        iconClass: "fas fa-lock",
+        iconColorClass: "icon-red",
+        bodyHtml: `
+          <p>This project was developed as a production-grade SaaS application.</p>
+          <p>The source code is maintained in a private repository and is not publicly accessible.</p>
+          <p>Live demonstrations are available through the portfolio.</p>
+        `
+      });
+    });
+  });
+
+  // GoTogether Ride Sharing Demo button
+  document.querySelectorAll(".gotogether-demo-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      showPremiumModal({
+        title: "Demo Temporarily Unavailable",
+        iconClass: "fas fa-exclamation-triangle",
+        iconColorClass: "icon-yellow",
+        bodyHtml: `
+          <p>The application is currently undergoing improvements and feature upgrades.</p>
+          <p>You can explore the project architecture, source code and implementation details on GitHub.</p>
+        `,
+        buttons: [
+          {
+            text: '<i class="fab fa-github"></i> Visit GitHub',
+            type: 'action',
+            onClick: () => {
+              window.open("https://github.com/AdarshSingh4455/GoTogether", "_blank");
+            }
+          },
+          {
+            text: 'Close',
+            type: 'close'
+          }
+        ]
+      });
+    });
+  });
+
 });
